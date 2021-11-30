@@ -1,0 +1,117 @@
+ion-content{
+    --ion-background-color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-pic{
+    height: 100vh;
+    width: 100%;
+    background: url('../../assets/Vert\ Icône\ d\'Arbre\ Environnement\ Logo\ \(2\).png');
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter{
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+ion-header{
+    color:rgb(66, 66, 66);
+    font-size: 45px;
+    font-family: Opensans;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 50px;
+    text-align: center;
+    outline: #000000;
+    outline-width: 10px;
+  }
+  
+  .ges-text{
+    margin-top: 60px;
+    margin-left: 160px;
+    font-size: 30px;
+  }
+  .cal-but{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 50px;
+    width: 100px;
+  }
+  .cal-icon{
+    font-size: 40px;
+    color: white;
+  }
+  .cal-text{
+    margin-left: 60px;
+  }
+  
+  .map-but{
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    margin-left: 15px;
+  }
+  .map-icon{
+    font-size: 40px;
+    color: white;
+  }
+  .map-text{
+    margin-left: 45px;
+  }
+  
+  .ser-text{
+    margin-top: 50px;
+    margin-left: 180px;
+    font-size: 25px;
+  }
+  .truck-but{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 50px;
+    width: 100px;
+  }
+  .truck-img{
+    height: 45px;
+    width: 80px;
+  }
+  .cam-text{
+    margin-left: 65px;
+  }
+  
+  .cont-but{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 50px;
+    width: 100px;
+  }
+  .cont-img{
+    height: 70px;
+    width: 35px;
+  }
+  
+  .logo-img{
+    height: 200px;
+    margin-left: 200px;
+    margin-top: -40px;
+    border-radius: 50%;
+  }
+  
+  .con-text{
+    margin-left: 20px;
+  }
+
+  .guide-but{
+    margin-top: 10px;
+    margin-left: 120px;
+    height: 50px;
+    width: 300px;
+  }

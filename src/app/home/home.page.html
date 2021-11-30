@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Accueil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="background-pic">
+    <div class="filter">
+ 
+      <ion-header [translucent]="true">
+      </ion-header>
+     
+      <ion-grid>
+        <ion-row>
+            <ion-header><strong> Bienvenue {{user?.name}} </strong></ion-header>
+        </ion-row>
+        <ion-row>
+          <ion-text class='ges-text'><strong>Informations</strong></ion-text>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col>
+            <ion-button class="cal-but" shape="round" color="success">
+              <ion-icon class="cal-icon" name="calendar" ></ion-icon>
+            </ion-button>
+            <ion-text class="cal-text" ><strong>Calendrier</strong></ion-text>
+          </ion-col>
+      
+          <ion-col>
+            <ion-button class='map-but' shape="round" color="success">
+              <ion-icon class='map-icon' name="location"></ion-icon>
+            </ion-button>
+            <br>
+            <ion-text class="map-text"><strong>Carte</strong></ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-text class="ser-text"><strong>Services</strong></ion-text>
+      </ion-row>
+      <br>
+        <ion-row>
+          <ion-col>
+            <ion-button class="truck-but" shape="round" color="success">
+              <ion-img class="truck-img" src="/assets/truck-256.png"></ion-img>
+            </ion-button>
+            <ion-text class="cam-text"><strong>Camion</strong></ion-text>
+          </ion-col>
+          
+          <ion-col>
+            <ion-button class='cont-but' shape="round" color="success">
+              <ion-img class="cont-img" src="/assets/container.png"></ion-img>
+            </ion-button>
+            <br>
+            <ion-text class="con-text"><strong>Conteneur</strong></ion-text>
+          </ion-col>
+        </ion-row>
+
+        <br><br>
+        <h2><strong>Découvrez notre guide de trie et notre savoir-faire</strong></h2>
+        <ion-row>
+          <ion-col>
+            <ion-button class="guide-but" shape="round" href="/guide" color="success">
+              <ion-img class="truck-img" src="../../assets/slider/5.png"></ion-img>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+      
+      
+      
+      
+      
+
+
+
+  
+</div>
+</div>
+
+</ion-content>

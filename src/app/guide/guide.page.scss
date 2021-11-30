@@ -1,0 +1,23 @@
+ion-content{
+    --background:linear-gradient(#ccdce0,#ffffff);
+}
+
+ion-header{
+    position: relative;
+    --background:linear-gradient(#ccdce0,#80ff72);
+}
+ion-toolbar{
+    --ion-background-color:linear-gradient(#ccdce0,#ffffff);
+}
+ion-title{
+    font-size: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    font-style: normal;
+    font-weight: lighter;
+    color: rgb(14, 14, 14);   
+}
+
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
