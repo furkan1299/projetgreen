@@ -1,0 +1,40 @@
+ion-content{
+    --background:linear-gradient(#d8dcdd,#80ff72);
+}
+
+ion-select{
+   font-family: fantasy;
+}
+
+span{
+    font-family: cursive;
+    text-decoration: underline dotted;
+    color:#0e0bac;
+    font-weight: bold;
+    font-size:  x-large;
+    padding-left: 20%;
+    padding-right: 40%;
+    
+}
+
+.style{
+    font-family: fantasy;
+    color: #0e0bac;
+}
+
+ion-item{
+    color: #0e0bac;
+    padding-left: 20%;
+    padding-right: 40%;
+    text-align: center;
+}
+
+
+
+ion-button{
+    font-family: fantasy;
+    --color: #0e0bac;
+    --background: rgb(16, 216, 123);
+      margin-left: 22%;
+    
+}
