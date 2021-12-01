@@ -83,6 +83,10 @@ const routes: Routes = [
   {
     path: 'tri-bois',
     loadChildren: () => import('./tri-bois/tri-bois.module').then( m => m.TriBoisPageModule)
+  },
+  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   }
 ];
 @NgModule({
