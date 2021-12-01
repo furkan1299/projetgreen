@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Réservation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<span>Nous acceptons jusqu'à plus de 7m³ !</span>
+<br>
+<br>
+<ion-button (click)="affiche()"><ion-icon name="help-outline"></ion-icon></ion-button>
+<br>
+<br>
+<br>
+<ion-item>
+  <ion-label class="style"> 
+    <ion-icon name="cube-outline"></ion-icon>
+
+    Volume : 
+  </ion-label>
+
+  <ion-select [(ngModel)]="selected_vol" (ionChange)="showVol()" placeholder="sélectionnez un volume" cancelText="annuler">
+
+    <ion-select-option value="v1">-5m3</ion-select-option>
+    <ion-select-option value="v2">+5m3</ion-select-option>
+    <ion-select-option value="v3">+7m3</ion-select-option>
+
+  </ion-select>
+
+</ion-item>
+<br>
+<br>
+<span>Déchets toxiques à évacuer ? Pas de soucis !</span>
+<br>
+<br>
+<ion-item>
+  <ion-label class="style"> 
+    <ion-icon name="trash-outline"></ion-icon>
+    Catégorie d'encombrant : 
+  </ion-label>
+
+  <ion-select [(ngModel)]="selected_cat" (ionChange)="showCat()" placeholder="sélectionnez une catégorie" cancelText="annuler"  multiple="false">
+    <ion-select-option value="cat1">Encombrants</ion-select-option>
+    <ion-select-option value="cat2">Déchets toxiques</ion-select-option>
+    <ion-select-option value="cat3">Les deux</ion-select-option>
+
+  </ion-select>
+
+</ion-item>
+<br>
+<br>
+<br>
+<br>
+
+<span>Date de passage</span>
+<br>
+<br>
+<ion-item>
+  <ion-label class="style"><ion-icon name="calendar-outline"></ion-icon><ion-icon name="time-outline"></ion-icon> Date et heure :</ion-label>
+  <ion-datetime class="style" disabled=false [(ngModel)]="myDate" (ionChange)="showdate()" [hourValues]="hourValues" [minuteValues]="minuteValues"  display-format="DDDD D MMMM H:mm " picker-format cancelText="Annuler" doneText="Sélectionner" monthNames='Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre' dayNames='lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche'  placeholder="Sélectionnez une date" ></ion-datetime>
+</ion-item>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<ion-button fill="outline" shape="round" class="position" (click)="calcul()"><ion-icon name="calculator-outline"></ion-icon> Estimation du prix</ion-button>
+<ion-button fill="outline" shape="round" class="position"><ion-icon name="card-outline"></ion-icon> passer au paiement</ion-button>
+
+
+</ion-content>
