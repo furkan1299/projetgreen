@@ -16,6 +16,9 @@ export class SignupPage implements OnInit {
   public password:string;
   public name:string;
   public phone:string;
+  public ville:string;
+  public region:string;
+  public address:string;
 
   constructor(
     public fireService:FireserviceService,
@@ -40,7 +43,7 @@ export class SignupPage implements OnInit {
     loading.present();
     this.afauth.createUserWithEmailAndPassword(this.email, this.password)
 
-    this.fireService.signup({name:this.name,email:this.email,phone:this.phone,password:this.password})
+    this.fireService.signup({name:this.name,email:this.email,phone:this.phone,password:this.password, region: this.region, ville:this.ville, address:this.address})
     .then(res=>{
       if(res.user.uid){
         
@@ -49,6 +52,9 @@ export class SignupPage implements OnInit {
           password:this.password,
           name:this.name,
           phone:this.phone,
+          region:this.region,
+          ville:this.ville,
+          address:this.address,
           uid:res.user.uid
           
         }
