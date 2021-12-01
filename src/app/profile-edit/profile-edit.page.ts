@@ -15,7 +15,7 @@ uid: string;
 name:string;
 email:string;
 phone:string;
-adress:string;
+address:string;
 region:string;
 ville:string;
 
@@ -34,7 +34,7 @@ ville:string;
       this.name = user.name;
       this.email = user.email;
       this.phone = user.phone;
-      this.adress = user.adress;
+      this.address = user.address;
       this.ville = user.ville;
       this.region = user.region;
     })
@@ -53,7 +53,7 @@ this.afs.collection('users').doc(this.uid).set({
 'name': this.name,
 'email': this.email,
 'phone': this.phone,
-'adress': this.adress,
+'address': this.address,
 'ville': this.ville,
 'editAt': Date.now()
 },{merge: true}) 

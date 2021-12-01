@@ -9,6 +9,6 @@ export interface User {
     email:string;
     ville:string;
     region:string;
-    adress:string;
+    address:string;
     uid:string;
 }
