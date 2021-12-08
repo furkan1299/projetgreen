@@ -106,6 +106,10 @@ const routes: Routes = [
   {
     path: 'typededechets',
     loadChildren: () => import('./typededechets/typededechets.module').then( m => m.TypededechetsPageModule)
+  },
+  {
+    path: 'tesst',
+    loadChildren: () => import('./tesst/tesst.module').then( m => m.TesstPageModule)
   }
 
 ];

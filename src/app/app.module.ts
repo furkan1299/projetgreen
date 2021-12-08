@@ -7,6 +7,9 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { NgCalendarModule } from 'ionic2-calendar';
+
+import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
@@ -35,7 +38,9 @@ import { StatusBar } from '@capacitor/status-bar';
       AppRoutingModule,
       AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    NgCalendarModule,
+
       
     ],
   providers: [
