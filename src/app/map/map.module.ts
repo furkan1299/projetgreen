@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MapPageRoutingModule } from './map-routing.module';
 import { MapPage } from './map.page';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 @NgModule({
   imports: [
@@ -12,6 +13,10 @@ import { MapPage } from './map.page';
     FormsModule,
     IonicModule,
     MapPageRoutingModule
+  ],
+  providers: [
+    Geolocation,
+
   ],
   declarations: [MapPage]
 })
