@@ -90,6 +90,22 @@ const routes: Routes = [
   },  {
     path: 'reserve',
     loadChildren: () => import('./reserve/reserve.module').then( m => m.ReservePageModule)
+  },
+  {
+    path: 'location',
+    loadChildren: () => import('./location/location.module').then( m => m.LocationPageModule)
+  },
+  {
+    path: 'tarif',
+    loadChildren: () => import('./tarif/tarif.module').then( m => m.TarifPageModule)
+  },
+  {
+    path: 'rdv',
+    loadChildren: () => import('./rdv/rdv.module').then( m => m.RdvPageModule)
+  },
+  {
+    path: 'typededechets',
+    loadChildren: () => import('./typededechets/typededechets.module').then( m => m.TypededechetsPageModule)
   }
 
 ];

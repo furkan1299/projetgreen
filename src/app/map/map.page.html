@@ -11,7 +11,33 @@
   <br><br>
   <p><ion-icon name="leaf" color></ion-icon><strong> Trouvez un point de collecte publiques</strong></p>
  
-  <div #map id="map"></div>
+  <div #map id="map"> </div>
+
+    
+    <ion-button (click)="getCurrentCoordinates()" expand="block">
+      Où suis-je ?
+    </ion-button>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Mes coordonnées</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        Latitue
+      </ion-label>
+      <ion-badge color="danger" slot="end">{{latitude}}</ion-badge>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>
+        Longitude
+      </ion-label>
+      <ion-badge color="danger" slot="end">{{longitude}}</ion-badge>
+    </ion-item>
+  </ion-list>    
+
+  
 
 
   
