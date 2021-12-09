@@ -60,16 +60,6 @@
 <br>
 <br>
 
-<span>Date de passage</span>
-<br>
-<br>
-<ion-item>
-  <ion-label class="style"><ion-icon name="calendar-outline"></ion-icon><ion-icon name="time-outline"></ion-icon> Date et heure :</ion-label>
-  <ion-datetime class="style" disabled=false [(ngModel)]="myDate" (ionChange)="showdate()" [hourValues]="hourValues" [minuteValues]="minuteValues"  display-format="DDDD D MMMM H:mm " picker-format cancelText="Annuler" doneText="Sélectionner" monthNames='Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre' dayNames='lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche'  placeholder="Sélectionnez une date" ></ion-datetime>
-</ion-item>
-
-
-
 <br>
 <br>
 <br>
@@ -78,7 +68,7 @@
 <br>
 
 <ion-button fill="outline" shape="round" class="position" (click)="calcul()"><ion-icon name="calculator-outline"></ion-icon> Estimation du prix</ion-button>
-<ion-button fill="outline" shape="round" class="position"><ion-icon name="card-outline"></ion-icon> passer au paiement</ion-button>
+<ion-button fill="outline" shape="round" class="position" href="/tesst"><ion-icon name="card-outline" ></ion-icon> Sélectionner une date</ion-button>
 
 
 </ion-content>

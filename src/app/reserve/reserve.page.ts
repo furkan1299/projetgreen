@@ -10,7 +10,6 @@ export class ReservePage {
 
   public selected_vol;
   public selected_cat;
-  public myDate;
 
 calcul(){
   if(this.selected_vol == "v1" && this.selected_cat == "cat1"){
@@ -59,10 +58,6 @@ showCat(){
 
 }
 
-
-  showdate(){
-    console.log(this.myDate);
-  }
 
 affiche(){
   alert("Un mètre cube correspond à un cube de 1 mètre de côté sur 6 faces.");
