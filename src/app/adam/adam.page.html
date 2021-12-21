@@ -1,3 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>Page d'accueil
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+
 <ion-content [fullscreen]="true">
   <h1><strong>Paramètres</strong></h1>
   <div class="circle circle1"></div>
@@ -7,6 +15,6 @@
    <ion-button class="n2" expand="block" shape="round" color="light" style="text-transform: none;" (click)="edit()"><ion-icon name="settings"></ion-icon>&nbsp;&nbsp;Modifier mon profil</ion-button> 
    <ion-button class="n3" expand="block" shape="round" color="light" style="text-transform: none;" (click)="guide()"><ion-icon name="checkmark-circle"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guide</ion-button> 
    <ion-button class="n4" expand="block" shape="round" color="light" style="text-transform: none;" (click)="nous()"><ion-icon name="heart"></ion-icon>&nbsp;&nbsp;À propos de nous</ion-button> 
-   <ion-button class="n5" expand="block" shape="round" color="light" style="text-transform: none;" (click)="logout()"><ion-icon name="close-circle"></ion-icon>&nbsp;&nbsp;Se déconneter</ion-button> 
+   <ion-button class="n5" expand="block" shape="round" color="light" style="text-transform: none;" (click)="logout()"><ion-icon name="close-circle"></ion-icon>&nbsp;&nbsp;Me déconneter</ion-button>
   </div>
 </ion-content>
