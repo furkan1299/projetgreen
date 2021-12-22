@@ -3,11 +3,11 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { CalendarComponent } from 'ionic2-calendar';
 
 @Component({
-  selector: 'app-tesst',
-  templateUrl: './tesst.page.html',
-  styleUrls: ['./tesst.page.scss'],
+  selector: 'app-calendrier',
+  templateUrl: './calendrier.page.html',
+  styleUrls: ['./calendrier.page.scss'],
 })
-export class TesstPage {
+export class CalendrierPage {
 
   eventSource = [];
   viewTitle: string;

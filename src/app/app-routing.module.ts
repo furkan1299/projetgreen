@@ -87,7 +87,8 @@ const routes: Routes = [
   {
     path: 'map',
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
-  },  {
+  },
+  {
     path: 'reserve',
     loadChildren: () => import('./reserve/reserve.module').then( m => m.ReservePageModule)
   },
@@ -110,7 +111,12 @@ const routes: Routes = [
   {
     path: 'tesst',
     loadChildren: () => import('./tesst/tesst.module').then( m => m.TesstPageModule)
-  }
+  },
+  {
+    path: 'calendrier',
+    loadChildren: () => import('./calendrier/calendrier.module').then( m => m.CalendrierPageModule)
+  },
+
 
 ];
 @NgModule({
