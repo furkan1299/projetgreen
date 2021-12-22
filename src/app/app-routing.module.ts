@@ -115,7 +115,7 @@ const routes: Routes = [
   {
     path: 'calendrier',
     loadChildren: () => import('./calendrier/calendrier.module').then( m => m.CalendrierPageModule)
-  },
+  }
 
 
 ];

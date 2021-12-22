@@ -43,13 +43,18 @@
   </ion-row>
   <div class="ion-padding">
 
-  
+  <ion-button (click)="addNewEvent()">Add New Event</ion-button>
 
   <calendar 
   [eventSource]="eventSource"
   [calendarMode]="calendar.mode"
   [currentDate]="calendar.currentDate"
-  (onTitleChanged)="onViewTitleChanged($event)">
+  (onCurrentDateChanged)="onCurrentDateChanged($event)"
+  (onRangeChanged)="reloadSource(startTime, endTime)"
+  (onEventSelected)="onEventSelected($event)"
+  (onTitleChanged)="onViewTitleChanged($event)"
+  (onTimeSelected)="onTimeSelected($event)"
+  step="30">
     
   </calendar>
 
