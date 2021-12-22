@@ -3,25 +3,34 @@ ion-content{
 }
 
 ion-select{
-   font-family: fantasy;
+   font-family: opensans;
 }
 
 span{
-    font-family: cursive;
-    text-decoration: underline dotted;
-    color:#0e0bac;
-    font-weight: bold;
-    font-size:  x-large;
+    font-family: opensans;
+    color:#080808;
+    font-size:  large;
     padding-left: 20%;
     padding-right: 40%;
-    
 }
 
-.style{
-    font-family: fantasy;
+
+.icon-vol{
+    font-family: opensans;
     color: #0e0bac;
+    margin-left: -320px;
 }
 
+.icon-con{
+  font-family: opensans;
+  color: #0e0bac;
+  margin-left: -200px;
+}
+.ref-but{
+  margin-left: -400px;
+  margin-top: -20px;
+  padding-top: 15px;
+}
 ion-item{
     color: #0e0bac;
     padding-left: 20%;
@@ -34,9 +43,14 @@ ion-item{
 }
 
 ion-button{
-    font-family: fantasy;
-    --color: #0e0bac;
+    font-family: opensans ;
+    --color: #050505;
     --background: rgb(16, 216, 123);
-      margin-left: 22%;
-    
+}
+.but-prix{
+  margin-left: 20%;
+}
+
+.but-cal{
+  margin-left:  50px;
 }
