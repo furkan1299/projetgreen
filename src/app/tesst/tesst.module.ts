@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -9,6 +9,9 @@ import { TesstPageRoutingModule } from './tesst-routing.module';
 import { TesstPage } from './tesst.page';
 
 import { NgCalendarModule } from 'ionic2-calendar';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+registerLocaleData(localeFr);
 
 
 @NgModule({
@@ -18,9 +21,12 @@ import { NgCalendarModule } from 'ionic2-calendar';
     IonicModule,
     TesstPageRoutingModule,
     NgCalendarModule
-    
+
   ],
-  declarations: [TesstPage]
+  declarations: [TesstPage],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR'}
+  ]
 })
 export class TesstPageModule {}
 
