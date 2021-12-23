@@ -21,13 +21,37 @@ ion-content{
 }
 
 h1,h2,h3{
-    color: rgb(86, 131, 2);
+    color: green;
     text-align: center;
+    font-size: 25px;
+
 }
 h4{
-    color: rgb(86, 131, 2);
+    color: green;
     text-align: left;
+    font-size: 25px;
+    text-align: center;
 }
 p{
     text-align: center;
+    font-size: 25px;
 }
+
+.social-icons {
+    font-size: 30px;
+  }
+  .horizontal {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .font-size-16 {
+      font-size: 20px;
+  }
+  .social-iconss{
+    font-size: 30px;
+    margin-left: 950px;
+
+  }
+  ion-icon{
+      color: green;
+  }
