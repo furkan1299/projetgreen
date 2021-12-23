@@ -1,118 +1,120 @@
 <body>
 
   <ion-app>
-  
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-back-button defaultHref="location"></ion-back-button>Location de container
-        </ion-buttons>
-      </ion-toolbar>
-      </ion-header>
-  
-  
-  
+
+  <ion-header translucent>
+
+  <ion-toolbar>
+
+  <ion-title>Réservez votre container</ion-title>
+
+  </ion-toolbar>
+
+  </ion-header>
+
+
+
   <ion-content fullscreen>
-  
+
   <ion-list>
-  
-  
-  
+
+
+
   <ion-item>
-  
+
   <ion-label>Type de déchets</ion-label>
-  
+
   <ion-select value="typededechets" interface="action-sheet">
-  
+
   <ion-select-option value="terreetsable">Terre et Sable</ion-select-option>
-  
+
   <ion-select-option value="dechetsverts">Déchets Verts</ion-select-option>
-  
+
   <ion-select-option value="papieretcarton">Papier et Carton</ion-select-option>
-  
+
   <ion-select-option value="briques">Briques</ion-select-option>
-  
+
   <ion-select-option value="bois">Bois</ion-select-option>
-  
+
   <ion-select-option value="Melange">Mélange</ion-select-option>
-  
+
   </ion-select>
-  
+
   </ion-item>
 
   <ion-item>
 
     <ion-label>Taille du container</ion-label>
-    
+
     <ion-select value="tailleducontainer" interface="action-sheet">
-    
+
     <ion-select-option value="terreetsable">10 m³</ion-select-option>
-    
+
     <ion-select-option value="dechetsverts">15 m³</ion-select-option>
-    
+
     <ion-select-option value="papieretcarton">20 m³</ion-select-option>
-    
+
     </ion-select>
-    
+
     </ion-item>
-    
-    
-    
+
+
+
     <ion-item>
-    
+
     <ion-label>
-    
+
     Date de réservation
-    
+
     </ion-label>
-    
+
     <ion-datetime display-format="D-MM-YYYY" picker-format="D-MM-YYYY" value="22-12-2021"></ion-datetime>
-    
+
     </ion-item>
     <ion-item>
 
       <ion-label>Nombre de jours</ion-label>
-      
+
       <ion-select value="nombredejours" interface="action-sheet">
-      
+
       <ion-select-option value="un">1 jour</ion-select-option>
-      
+
       <ion-select-option value="deux">2 jours</ion-select-option>
-      
+
       <ion-select-option value="trois">3 jours</ion-select-option>
-      
+
       <ion-select-option value="quatre">4 jours</ion-select-option>
-      
+
       <ion-select-option value="cinq">5 jours</ion-select-option>
-      
+
       </ion-select>
-      
+
       </ion-item>
-      
-      
-      
+
+
+
       <ion-item>
-      
+
       <ion-label position="floating">Commentaires sur les déchets</ion-label>
-      
+
       <ion-textarea></ion-textarea>
-      
+
       </ion-item>
-      
+
       </ion-list>
-      
-      
-      
+
+
+
       <section class="BoutonReserver" >
-      
-      <ion-button href="" class="reserver" expand="block" color="success">Réserver</ion-button>
-      
+
+      <ion-button href="/tesst" class="reserver" expand="block" color="success">Réserver</ion-button>
+
       </section>
-      
-      
-      
+
+
+
       </ion-content>
-      
+
       </ion-app>
-      
+
       </body>

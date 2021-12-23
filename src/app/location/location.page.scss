@@ -1,102 +1,49 @@
-.reserver
-
-{
-
+.reserver {
 color: white;
-
 }
 
-.BoutonReserver
-
-{
-
-margin-top: 1em;
-
-margin-bottom: 2.5em;
-
-margin-left: 50em;
-
-margin-right: 9em;
-
-width: 300px;
-display: block;
-
-
-
+.title {
+    margin-left: 75px;
 }
 
-.titre
-
-{
-
-text-align: center;
-
-margin-left: 1em;
-
-margin-right: 1em;
-
-margin-bottom: 0em;
-
+.BoutonReserver {
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
-
-
-.texte
-
-{
-
-text-align: center;
-
-margin-left: 1.5em;
-
-margin-right: 1.5em;
-
+.titre {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0em;
 }
 
-.tarifs
-
-{
-
-display: center;
-
-width: 150px;
-
-height: 40px;
-
-margin-left:35%;
-
+.texte {
+    text-align: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
-.type{
-
-display: center;
-
-width: 150px;
-
-height: 40px;
-
-margin-left:55%;
-
-margin-top:-44px;
-
+.tarifs {
+    display: center;
+    width: 150px;
+    height: 40px;
+    margin-left:35%;
 }
 
-
-
-.imagecontainer
-
-{
-
-display: block;
-
-margin-left: auto;
-
-margin-right: auto;
-
-margin-top: 0em;
-
-height: 350px;
+.type {
+    display: center;
+    width: 150px;
+    height: 40px;
+    margin-left:55%;
+    margin-top:-44px;
 }
-p{
-    font-size: 20px;
+
+.imagecontainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
 }

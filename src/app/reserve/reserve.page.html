@@ -1,10 +1,13 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>Page d'accueil
+      <ion-back-button defaultHref="home"></ion-back-button> Retour
     </ion-buttons>
+    <ion-title class='titre'>
+      Réservation
+    </ion-title>
   </ion-toolbar>
-  </ion-header>
+</ion-header>
 
 <ion-content [fullscreen]="true">
 <br>
@@ -14,17 +17,13 @@
 <br>
 <br>
 <span>Nous acceptons jusqu'à plus de 7m³ !</span>
-<br>
-<br>
-<ion-button (click)="affiche()"><ion-icon name="help-outline"></ion-icon></ion-button>
-<br>
-<br>
+<ion-button class='ref-but' color='success' (click)="affiche()">Réference</ion-button>
 <br>
 <ion-item>
-  <ion-label class="style"> 
+  <ion-label class="icon-vol">
     <ion-icon name="cube-outline"></ion-icon>
 
-    Volume : 
+    Volume :
   </ion-label>
 
   <ion-select [(ngModel)]="selected_vol" (ionChange)="showVol()" placeholder="sélectionnez un volume"  cancelText="annuler">
@@ -36,15 +35,15 @@
   </ion-select>
 
 </ion-item>
+
 <br>
 <br>
 <span>Déchets toxiques à évacuer ? Pas de soucis !</span>
 <br>
-<br>
 <ion-item>
-  <ion-label class="style"> 
+  <ion-label class="icon-con">
     <ion-icon name="trash-outline"></ion-icon>
-    Catégorie d'encombrant : 
+    Catégorie d'encombrant :
   </ion-label>
 
   <ion-select [(ngModel)]="selected_cat" (ionChange)="showCat()" placeholder="sélectionnez une catégorie" cancelText="annuler"  multiple="false">
@@ -55,10 +54,7 @@
   </ion-select>
 
 </ion-item>
-<br>
-<br>
-<br>
-<br>
+
 
 <br>
 <br>
@@ -67,8 +63,8 @@
 <br>
 <br>
 
-<ion-button fill="outline" shape="round" class="position" (click)="calcul()"><ion-icon name="calculator-outline"></ion-icon> Estimation du prix</ion-button>
-<ion-button fill="outline" shape="round" class="position" href="/tesst"><ion-icon name="card-outline" ></ion-icon> Sélectionner une date</ion-button>
+<ion-button shape="round" class="but-prix" color='success' (click)="calcul()"><ion-icon name="calculator-outline"></ion-icon> Estimation du prix</ion-button>
+<ion-button shape="round" class="but-cal" href="/tesst" color='success'><ion-icon name="card-outline" ></ion-icon> Sélectionner une date</ion-button>
 
 
 </ion-content>
