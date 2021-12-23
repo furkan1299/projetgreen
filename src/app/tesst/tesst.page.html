@@ -43,7 +43,7 @@
   </ion-row>
   <div class="ion-padding">
 
-  <ion-button (click)="addNewEvent()">Réserver votre rendez-vous</ion-button>
+  <ion-button (click)="addNewEvent()" color="success">Je réserve mon rendez-vous</ion-button>
 
   <calendar 
   [eventSource]="eventSource"
@@ -57,7 +57,7 @@
   step="30">
     
   </calendar>
-  <ion-button fill="outline" shape="round"><ion-icon name="card-outline" ></ion-icon> Versement au compte BE09 1016 2050 1569</ion-button>
+  <ion-button fill="outline" shape="round" color="success"><ion-icon name="card-outline" ></ion-icon> Versement au compte BE09 1016 2050 1569</ion-button>
   </div>
 
 </ion-content>
