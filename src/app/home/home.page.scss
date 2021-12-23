@@ -20,7 +20,10 @@ ion-content{
   flex-direction: column;
 }
 
-
+.para-but{
+  width: 50px;
+  margin-left: 270px;
+}
 
 
 ion-header{
@@ -37,13 +40,13 @@ ion-header{
 
 .ges-text{
   margin-top: 60px;
-  margin-left: 290px;
+  margin-left: 510px;
   font-size: 30px;
 }
 
 .cal-but{
   margin-top: 10px;
-  margin-left: 180px;
+  margin-left: 400px;
   height: 50px;
   width: 100px;
 }
@@ -52,7 +55,7 @@ ion-header{
   color: white;
 }
 .cal-text{
-  margin-left: 180px;
+  margin-left: 400px;
 }
 
 .map-but{
@@ -69,15 +72,22 @@ ion-header{
   margin-left: 110px;
 }
 
+.title{
+  margin-left: 300px;
+}
+
+.para{
+  // margin-left: 200px;
+}
 .ser-text{
   margin-top: 50px;
-  margin-left: 320px;
+  margin-left: 540px;
   font-size: 30px;
 }
 
 .truck-but{
   margin-top: 10px;
-  margin-left: 180px;
+  margin-left: 400px;
   height: 50px;
   width: 100px;
 }
@@ -87,7 +97,7 @@ ion-header{
 }
 
 .cam-text{
-  margin-left: 185px;
+  margin-left: 410px;
 }
 
 .cont-but{
@@ -114,12 +124,12 @@ ion-header{
 
 .guide-but{
   margin-top: 10px;
-  margin-left: 230px;
+  margin-left: 450px;
   height: 50px;
   width: 300px;
 }
 
 .h2{
-  margin-left: 120px;
+  margin-left: 330px;
 }
 
