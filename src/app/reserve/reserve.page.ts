@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -59,14 +60,28 @@ showCat(){
 }
 
 
-affiche(){
-  alert("Un mètre cube correspond à un cube de 1 mètre de côté sur 6 faces.");
+async affiche(){
+  const alert = await this.alertController.create({
+    cssClass: 'alert-buttons',
+    header: 'Notre conteneur de 8 pieds standard est probablement le produit le plus modeste de notre gamme. ',
+    message: `<img src="../../assets/slider/bb.png">`,
+    buttons: [
+      {
+        text: "D'accord",
+        cssClass: 'btns-modal-alert',
+        handler: (blah) => {
+          console.log('Confirm Cancel: blah');
+        }
+      },
+    ]
+  });
+
+  await alert.present();
 }
+
   
 
-
-
-  constructor() {}
+  constructor(  private alertController: AlertController) {}
 
 
 

@@ -1,5 +1,5 @@
 ion-content{
-    --background:linear-gradient(#ccdce0,#80ff72);
+    --background:white;
 }
 
 ion-header{
@@ -29,3 +29,6 @@ ion-item{
     --min-height: 35px;
     margin-bottom: 10px;
 }
+ion-icon {
+    color: rgb(7, 161, 84);
+    }

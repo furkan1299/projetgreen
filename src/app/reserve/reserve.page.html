@@ -16,21 +16,22 @@
 <br>
 <br>
 <br> 
-<span style="font-size: 24px;"><strong>Nous acceptons jusqu'à plus de 7m³ !</strong></span>
+<span style="font-size: 24px;"><strong> Volume d'encombrants ? Nous acceptons plus de 7m³ !</strong></span>
 <ion-button  style="font-size: 20px;" class='ref-but' color='success' (click)="affiche()">Réference</ion-button>
+
 <br>
 <ion-item>
   <ion-label class="icon-vol">
     <ion-icon name="cube-outline"></ion-icon>
 
-    Volume :
+    <strong>Volume</strong>
   </ion-label>
 
   <ion-select [(ngModel)]="selected_vol" (ionChange)="showVol()" placeholder="sélectionnez un volume"  cancelText="annuler">
 
-    <ion-select-option value="v1">-5m3</ion-select-option>
-    <ion-select-option value="v2">+5m3</ion-select-option>
-    <ion-select-option value="v3">+7m3</ion-select-option>
+    <ion-select-option value="v1">-5m3 ≈ 8 pieds</ion-select-option>
+    <ion-select-option value="v2">+5m3 ≈ 12 pieds</ion-select-option>
+    <ion-select-option value="v3">+7m3 ≈ 20 pieds</ion-select-option>
 
   </ion-select>
 
@@ -43,7 +44,7 @@
 <ion-item>
   <ion-label class="icon-con">
     <ion-icon name="trash-outline"></ion-icon>
-    Catégorie d'encombrant :
+    Catégorie d'encombrant
   </ion-label>
 
   <ion-select [(ngModel)]="selected_cat" (ionChange)="showCat()" placeholder="sélectionnez une catégorie" cancelText="annuler"  multiple="false">
