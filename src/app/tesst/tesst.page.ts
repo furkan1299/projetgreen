@@ -37,7 +37,7 @@ export class TesstPage {
     let end = this.selectedDate;
     end.setMinutes(end.getMinutes() + 60);
     let event = {
-      title: 'Event #' + start.getMinutes(),
+      title: "Réservation de rendez-vous pour le débarrassement d'encombrants",
       startTime: start,
       endTime: end,
       allDay: false,

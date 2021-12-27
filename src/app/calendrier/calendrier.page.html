@@ -6,14 +6,14 @@
     <ion-col>
       <ion-row>
         <ion-title class='title'>
-        Calendrier
+        Quand devais-je sortir mes poubelles pour ma rue ?
         </ion-title>
       </ion-row>
     </ion-col>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <img class="collecte" src="../../assets/slider/collecte.png">
 
   <ion-segment [(ngModel)]= "calendar.mode">
     <ion-segment-button value="month">
@@ -43,8 +43,6 @@
   </ion-row>
   <div class="ion-padding">
 
-  <ion-button (click)="addNewEvent()">Ajouter nouveau événement</ion-button>
-
   <calendar 
   [eventSource]="eventSource"
   [calendarMode]="calendar.mode"
@@ -59,6 +57,7 @@
   </calendar>
 
   </div>
+<img class= "sac" src="../../assets/slider/sac.jpg">
 
   
 

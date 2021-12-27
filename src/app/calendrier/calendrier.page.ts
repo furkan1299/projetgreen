@@ -19,7 +19,7 @@ export class CalendrierPage {
   selectedDate = new Date();
   constructor(private db: AngularFirestore,) { 
 
-    this.db.collection(`events`).snapshotChanges().subscribe(colSnap => {
+    this.db.collection(`dechets`).snapshotChanges().subscribe(colSnap => {
       this.eventSource = [];
       colSnap.forEach(snap => {
         let event:any = snap.payload.doc.data();
@@ -42,7 +42,7 @@ export class CalendrierPage {
       endTime: end,
       allDay: false,
     };
-    this.db.collection(`events`).add(event);
+    this.db.collection(`dechets`).add(event);
   }
 
   onViewTitleChanged(title) {
