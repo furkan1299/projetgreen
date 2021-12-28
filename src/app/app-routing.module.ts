@@ -115,7 +115,23 @@ const routes: Routes = [
   {
     path: 'calendrier',
     loadChildren: () => import('./calendrier/calendrier.module').then( m => m.CalendrierPageModule)
+  },  {
+    path: 'recapitulatif',
+    loadChildren: () => import('./recapitulatif/recapitulatif.module').then( m => m.RecapitulatifPageModule)
+  },
+  {
+    path: 'bancaire',
+    loadChildren: () => import('./bancaire/bancaire.module').then( m => m.BancairePageModule)
+  },
+  {
+    path: 'bancontact',
+    loadChildren: () => import('./bancontact/bancontact.module').then( m => m.BancontactPageModule)
+  },
+  {
+    path: 'virement',
+    loadChildren: () => import('./virement/virement.module').then( m => m.VirementPageModule)
   }
+
 
 
 ];

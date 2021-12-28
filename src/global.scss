@@ -30,3 +30,8 @@
 .secondary {
     color: red !important;
 }
+
+.my-custom-class {
+    --backdrop-opacity: 0.2;
+    --background: linear-gradient(90deg, rgb(188, 233, 202) 1%, rgb(207, 240, 214) 100%);
+}
