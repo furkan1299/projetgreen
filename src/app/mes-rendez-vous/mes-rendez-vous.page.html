@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>Retour
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<p><strong>Mes rendez-vous</strong></p>
+<img src="../../assets/rd.png">
+
+
+  <ion-item *ngFor="let event of events | async">
+    <ion-label>{{ event.startTime.toDate() | date: 'dd MMM YYY HH:mm'  }}</ion-label>
+  </ion-item>
+
+</ion-content>

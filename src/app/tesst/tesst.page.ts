@@ -17,7 +17,7 @@ export class TesstPage {
     currentDate: new Date(),
   };
   selectedDate = new Date();
-  constructor(private db: AngularFirestore,) { 
+  constructor(private db: AngularFirestore) { 
 
     this.db.collection(`events`).snapshotChanges().subscribe(colSnap => {
       this.eventSource = [];

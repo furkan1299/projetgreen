@@ -130,6 +130,10 @@ const routes: Routes = [
   {
     path: 'virement',
     loadChildren: () => import('./virement/virement.module').then( m => m.VirementPageModule)
+  },
+  {
+    path: 'mes-rendez-vous',
+    loadChildren: () => import('./mes-rendez-vous/mes-rendez-vous.module').then( m => m.MesRendezVousPageModule)
   }
 
 
