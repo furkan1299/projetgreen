@@ -1,11 +1,30 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>virement</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="recapitulatif"></ion-back-button> Retour
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-
-  
-
+  <h1 style="font-size: 16px;"><ion-icon style="color: green;" name="alert-circle-outline"></ion-icon> Veuillez compléter vos informations ! </h1>
+  <h1 style="font-size: 16px;"><ion-icon style="color: rgb(211, 36, 6);" name="alert-circle-outline"></ion-icon> Veuillez savoir que pour tout mode de paiement, il vous faudra transférer le montant de la facture sur notre compte bancaire. <br>Vous recevrez votre confirmation de commande par e-mail, comprenant nos coordonnées 
+    bancaires et le numéro de commande.<br> Votre réservation sera annulé automatiquement annulée si le paiement n'est pas reçu <strong>dans les 48 heures</strong> </h1>
+  <h1><strong>Confirmer votre paiement par carte Virement bancaire</strong></h1>
+  <ion-card [options]="settings">
+    <ion-card-content>
+      <br>
+        <ion-card-header><strong> Le paiement est effectué par virement du montant de la facture vers le compte suivant :</strong> </ion-card-header>
+        <p>à l'ordre de : <strong>Greenium</strong></p>
+        <p>Veuillez inclure ces informations: <strong>IBAN : BE16 2710 2827 0033
+          BIC : GEBABEBB</strong></p>
+          <p>à cette banque : <strong>Place la Porte, 30 1000 Bruxelles</strong></p><br>
+          <p style="font-size: 16px;"><strong>Nous nous occupons de votre réservation dès la réception de votre paiement sur notre compte en banque.</strong></p>
+  </ion-card-content>
+  </ion-card>
+    <br>
+    <div class="mbsc-btn-group-block mbsc-padding">
+        <ion-button class="ionic-super-popup" color="success" (click)="showAlert()">Je paie !</ion-button>
+    </div>
 </ion-content>

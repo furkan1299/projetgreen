@@ -14,28 +14,15 @@ export class RecapitulatifPage {
   constructor(
     private router: Router,
   ) { }
-  @ViewChild('myNav') nav: NavController
- 
-  categories = [{
-    name: 'Payer par carte bancaire',
-    value: false
-  }, {
-    name: 'Payer par PayPal',
-    value: false
-  }, {
-    name: 'Payer par virement bancaire',
-    value: false
-  }];
-
-  selection(name: string) {
-    this.categories.forEach(x => {
-      if (x.name !== name) {
-        x.value = !x.value
-      }
-    })
-  }
-  bancaire(){
+  
+  
+bancaire(){
     this.router.navigate(['/bancaire']);
 }
-
+bancontact(){
+  this.router.navigate(['/bancontact']);
+}
+virement(){
+  this.router.navigate(['/virement']);
+}
 }

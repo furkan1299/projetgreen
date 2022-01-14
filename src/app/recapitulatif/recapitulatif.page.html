@@ -12,15 +12,26 @@
 
   <ion-list-header style="font-size: 24px;"><strong>Veuillez sélectionner un mode de paiement</strong></ion-list-header>
   <ion-card class="ion-card">
-		<ion-item *ngFor="let category of categories; let i = index">
-			<ion-label>{{category.name}}</ion-label>
-			<ion-checkbox (click)="bancaire()"
-        [disabled]="categories[i].value" 
-        (click)="selection(category.name);">
-			</ion-checkbox>
+		<ion-item>
+			<ion-label>Payer par carte bancaire</ion-label>
+			<ion-button color="success" (click)="bancaire()">
+			</ion-button>
 		</ion-item>
 	</ion-card>
-
+  <ion-card class="ion-card">
+		<ion-item>
+			<ion-label>Payer par PayPal</ion-label>
+			<ion-button color="success" (click)="bancontact()" >
+      </ion-button>
+		</ion-item>
+	</ion-card>
+  <ion-card class="ion-card">
+		<ion-item>
+			<ion-label>Payer par virement bancaire</ion-label>
+			<ion-button color="success" (click)="virement()">
+			</ion-button>
+		</ion-item>
+	</ion-card>
     </div>
   </div>
 </ion-content>

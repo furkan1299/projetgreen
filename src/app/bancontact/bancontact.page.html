@@ -1,9 +1,22 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>bancontact</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="recapitulatif"></ion-back-button> Retour
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
+  <h1 style="font-size: 16px;"><ion-icon style="color: green;" name="alert-circle-outline"></ion-icon> Veuillez compléter vos informations ! </h1>
+  <h1 style="font-size: 16px;"><ion-icon style="color: rgb(211, 36, 6);" name="alert-circle-outline"></ion-icon> Veuillez savoir que pour tout mode de paiement, il vous faudra transférer le montant de la facture sur notre compte bancaire. <br>Vous recevrez votre confirmation de commande par e-mail, comprenant nos coordonnées 
+    bancaires et le numéro de commande.<br> Votre réservation sera annulé automatiquement annulée si le paiement n'est pas reçu <strong>dans les 48 heures</strong> </h1>
+  <h1><strong>Confirmer votre paiement par carte PayPal</strong></h1>
+  <ion-card [options]="settings">
+    <ion-card-content>
+    <br>
+   <ion-button color="success" (click)="presentToast()" href="https://www.paypal.com/signin?intent=connect&ctxId=connect%3Ad1672b7fbdb443b2ae16a0a14f11db60&returnUri=https%253A%252F%252Fwww.paypal.com%252Fconnect%252F%253Fclient_id%253DAfAQjjq3lKksML0pQf_HbhfKApNWawgoJjHA_CLEVOR1Zgy3oPEn4So1naSb4bqsnC_LPZ31EaMXfibS%2526metadata_id%253Dd1672b7fbdb443b2ae16a0a14f11db60%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.paypal-opladen.be%25252Ffr%25252Fconnecter-avec-paypal%25252Fverifier%2526response_type%253Dcode%2526scope%253Dprofile%252520email%252520https%25253A%25252F%25252Furi.paypal.com%25252Fservices%25252Fpaypalattributes%252520address%252520openid%2526context_id%253DAfAQjjq3lKksML0pQf_HbhfKApNWawgoJjHA_CLEVOR1Zgy3oPEn4So1naSb4bqsnC_LPZ31EaMXfibS2021-12-27T22%25253A46%25253A11ZcDc0_lDWvp1VaI15_4Vbpg1640645171024.CA%2526continue_acn%253Dtoken%2526redirectInContext%253Dtrue&flowId=d1672b7fbdb443b2ae16a0a14f11db60&locale.x=fr_FR&country.x=FR&signup_redirect_uri="> <ion-icon name="logo-paypal"></ion-icon>Paiement par PayPal</ion-button>
+  </ion-card-content>
+  </ion-card>
 
 </ion-content>
