@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-virement',
@@ -8,9 +9,16 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./virement.page.scss'],
 })
 export class VirementPage{
-  constructor(  public alertController: AlertController, private toastr: ToastController) { }
 
- 
+  data : any;
+  myArray : any;
+
+  constructor(  public alertController: AlertController, private toastr: ToastController, private activatedRoute: ActivatedRoute) { 
+    this.data = this.activatedRoute.snapshot.paramMap.get('xyz');
+  }
+  
+
+  
   async showAlert() {
     const alert = await this.alertController.create({
       header: 'Votre commande est confirmée',

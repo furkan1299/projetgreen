@@ -115,8 +115,9 @@ const routes: Routes = [
   {
     path: 'calendrier',
     loadChildren: () => import('./calendrier/calendrier.module').then( m => m.CalendrierPageModule)
-  },  {
-    path: 'recapitulatif',
+  },
+  {
+    path: 'recapitulatif/:xyz',
     loadChildren: () => import('./recapitulatif/recapitulatif.module').then( m => m.RecapitulatifPageModule)
   },
   {
@@ -134,6 +135,10 @@ const routes: Routes = [
   {
     path: 'mes-rendez-vous',
     loadChildren: () => import('./mes-rendez-vous/mes-rendez-vous.module').then( m => m.MesRendezVousPageModule)
+  },
+  {
+    path: 'confirmation/:xyz',
+    loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
   }
 
 

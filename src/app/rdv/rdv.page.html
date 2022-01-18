@@ -10,47 +10,47 @@
   <ion-content> 
 
     <ion-item>
-      <ion-select placeholder='Type de déchets' value="typededechets" interface="action-sheet">
-      <ion-select-option value="terreetsable">Terre et Sable</ion-select-option>
-      <ion-select-option value="dechetsverts">Déchets Verts</ion-select-option>
-      <ion-select-option value="papieretcarton">Papier et Carton</ion-select-option>
-      <ion-select-option value="briques">Briques</ion-select-option>
-      <ion-select-option value="bois">Bois</ion-select-option>
-      <ion-select-option value="Melange">Mélange</ion-select-option>
+      <ion-select [(ngModel)]="type" placeholder='Type de déchets' value="typededechets" interface="action-sheet">
+      <ion-select-option value="Terre et sable ">Terre et Sable</ion-select-option>
+      <ion-select-option value="Dechets verts  ">Déchets Verts</ion-select-option>
+      <ion-select-option value="Papier & Carton">Papier et Carton</ion-select-option>
+      <ion-select-option value="Briques        ">Briques</ion-select-option>
+      <ion-select-option value="Bois           ">Bois</ion-select-option>
+      <ion-select-option value="Melange        ">Mélange</ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
-      <ion-select placeholder='Taille du container' value="tailleducontainer" interface="action-sheet">
-      <ion-select-option value="terreetsable">10 m³</ion-select-option>
-      <ion-select-option value="dechetsverts">15 m³</ion-select-option>
-      <ion-select-option value="papieretcarton">20 m³</ion-select-option>
-      </ion-select>
-    </ion-item>
-
-
-
-    <ion-item>
-      <ion-datetime placeholder='Date de réservation' display-format="D-MM-YYYY" picker-format="D-MM-YYYY" value="22-12-2021"></ion-datetime>
-    </ion-item>
-
-    <ion-item>
-      <ion-select placeholder='Nombre de jours' value="nombredejours" interface="action-sheet">
-      <ion-select-option value="un">1 jour</ion-select-option>
-      <ion-select-option value="deux">2 jours</ion-select-option>
-      <ion-select-option value="trois">3 jours</ion-select-option>
-      <ion-select-option value="quatre">4 jours</ion-select-option>
-      <ion-select-option value="cinq">5 jours</ion-select-option>
+      <ion-select [(ngModel)]="taille" placeholder='Taille du container' value="tailleducontainer" interface="action-sheet">
+      <ion-select-option value="10">10 m³</ion-select-option>
+      <ion-select-option value="15">15 m³</ion-select-option>
+      <ion-select-option value="20">20 m³</ion-select-option>
       </ion-select>
     </ion-item>
 
 
 
     <ion-item>
-      <ion-textarea placeholder="Commentaires sur les déchets"></ion-textarea>
+      <ion-datetime [(ngModel)]="date" placeholder='Date de réservation' display-format="D-MM-YYYY" picker-format="D-MM-YYYY" value="22-12-2021"></ion-datetime>
     </ion-item>
 
-    <ion-button href="/tesst" class="reserver" expand="block" color="success">Réserver</ion-button>
+    <ion-item>
+      <ion-select [(ngModel)]="periode" placeholder='Nombre de jours' value="nombredejours" interface="action-sheet">
+      <ion-select-option value='1'>1 jour</ion-select-option>
+      <ion-select-option value="2">2 jours</ion-select-option>
+      <ion-select-option value="3">3 jours</ion-select-option>
+      <ion-select-option value="4">4 jours</ion-select-option>
+      <ion-select-option value="5">5 jours</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-textarea [(ngModel)]="commentaires" placeholder="Commentaires sur les déchets"></ion-textarea>
+    </ion-item>
+
+    <ion-button (click)='postData()' class="reserver" expand="block" color="success">Réserver</ion-button>
 
   </ion-content>
 </body>

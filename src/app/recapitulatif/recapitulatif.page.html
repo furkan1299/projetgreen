@@ -7,31 +7,61 @@
 </ion-header>
 
 <ion-content>
-  <div class="background-pic">
-    <div class="filter">
+  	<div class="background-pic">
+	<div class="filter">
+	<ion-grid>
+		<ion-col size='3'>
+			<ion-row>
+ 			<ion-list-header style="font-size: 24px;"><strong>Veuillez sélectionner un mode de paiement</strong></ion-list-header>
+  			<ion-card class="ion-card">
+				<ion-item>
+					<ion-label>Payer par carte bancaire</ion-label>
+					<ion-button class='button1' color="success" (click)="bancaire()">Choisir</ion-button>
+				</ion-item>
+			</ion-card>
+			</ion-row>
+			<ion-row>
+				<ion-card class="ion-card">
+				<ion-item>
+					<ion-label>Payer par PayPal</ion-label>
+					<ion-button class='button2' color="success" (click)="bancontact()" >Choisir</ion-button>
+				</ion-item>
+				</ion-card>
+			</ion-row>
+			<ion-row>
+				<ion-card class="ion-card">
+				<ion-item>
+					<ion-label>Payer par virement bancaire</ion-label>
+					<ion-button class='button3' color="success" (click)="virement()">Choisir</ion-button>
+				</ion-item>
+				</ion-card>
+			</ion-row>
+		
+		
+			<ion-row>
+				<ion-card class='ion-card-rec'>
+				<ion-item>
+					<ion-label class='label'>Recapitulatif</ion-label>		
+				</ion-item>
+				<div class='recap'>
+					<ion-item>
+						<h3>Type : {{this.data[9]}}{{this.data[10]}}{{this.data[11]}}{{this.data[12]}}{{this.data[13]}}{{this.data[14]}}{{this.data[15]}}{{this.data[16]}}{{this.data[17]}}{{this.data[18]}}{{this.data[19]}}{{this.data[20]}}{{this.data[21]}}{{this.data[22]}}{{this.data[23]}}</h3>
+					</ion-item>
+					<ion-item>
+						<h3>Taille : {{this.data[36]}}{{this.data[37]}} cm^3</h3><br>
+					</ion-item>
+					<ion-item>
+						<h3>Date : {{this.data[48]}}{{this.data[49]}}{{this.data[50]}}{{this.data[51]}}{{this.data[52]}}{{this.data[53]}}{{this.data[54]}}{{this.data[55]}}{{this.data[56]}}{{this.data[57]}}</h3><br>
+					</ion-item>
+					<ion-item>
+						<h3>Duree : {{this.data[90]}} jours</h3><br>
+					</ion-item>
+					<ion-item>
+						<h3>Prix Total : {{this.total}} €</h3><br>
+					</ion-item>
+				</div>
+				</ion-card>
+			</ion-row>
+		</ion-col>
+	</ion-grid>
 
-  <ion-list-header style="font-size: 24px;"><strong>Veuillez sélectionner un mode de paiement</strong></ion-list-header>
-  <ion-card class="ion-card">
-		<ion-item>
-			<ion-label>Payer par carte bancaire</ion-label>
-			<ion-button color="success" (click)="bancaire()">
-			</ion-button>
-		</ion-item>
-	</ion-card>
-  <ion-card class="ion-card">
-		<ion-item>
-			<ion-label>Payer par PayPal</ion-label>
-			<ion-button color="success" (click)="bancontact()" >
-      </ion-button>
-		</ion-item>
-	</ion-card>
-  <ion-card class="ion-card">
-		<ion-item>
-			<ion-label>Payer par virement bancaire</ion-label>
-			<ion-button color="success" (click)="virement()">
-			</ion-button>
-		</ion-item>
-	</ion-card>
-    </div>
-  </div>
-</ion-content>
