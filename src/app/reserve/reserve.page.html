@@ -29,9 +29,9 @@
 
   <ion-select [(ngModel)]="selected_vol" (ionChange)="showVol()" placeholder="sélectionnez un volume"  cancelText="annuler">
 
-    <ion-select-option value="v1">-5m3 ≈ 8 pieds</ion-select-option>
-    <ion-select-option value="v2">+5m3 ≈ 12 pieds</ion-select-option>
-    <ion-select-option value="v3">+7m3 ≈ 20 pieds</ion-select-option>
+    <ion-select-option value="8 pieds ">-5m3 ≈ 8 pieds</ion-select-option>
+    <ion-select-option value="12 pieds">+5m3 ≈ 12 pieds</ion-select-option>
+    <ion-select-option value="20 pieds">+7m3 ≈ 20 pieds</ion-select-option>
 
   </ion-select>
 
@@ -48,12 +48,21 @@
   </ion-label>
 
   <ion-select [(ngModel)]="selected_cat" (ionChange)="showCat()" placeholder="sélectionnez une catégorie" cancelText="annuler"  multiple="false">
-    <ion-select-option value="cat1">Encombrants</ion-select-option>
-    <ion-select-option value="cat2">Déchets toxiques</ion-select-option>
-    <ion-select-option value="cat3">Les deux</ion-select-option>
+    <ion-select-option value="Encombrants">Encombrants</ion-select-option>
+    <ion-select-option value="Toxiques   ">Déchets toxiques</ion-select-option>
+    <ion-select-option value="Mixtes     ">Les deux</ion-select-option>
 
   </ion-select>
 
+</ion-item>
+<span style="font-size: 24px;" class="span3"><strong>Choisir votre date de reservation</strong></span>
+<ion-item>
+  <ion-label class="date">
+    <ion-icon name="calendar-outline"></ion-icon>
+    Date de reservation
+  </ion-label>
+  <ion-icon name="calendars-outline"></ion-icon>
+  <ion-datetime [(ngModel)]="date" placeholder='Date de réservation' display-format="D-MM-YYYY" picker-format="D-MM-YYYY" value="22-12-2021"></ion-datetime>
 </ion-item>
 
 
@@ -64,8 +73,8 @@
 <br>
 <br>
 
-<ion-button style="font-size: 20px;" shape="round" class="but-prix" color='success' (click)="calcul()"><ion-icon name="calculator-outline"></ion-icon> Estimation du prix</ion-button>
-<ion-button style="font-size: 20px;" shape="round" class="but-cal" href="/tesst" color='success'> <ion-icon name="card-outline" > </ion-icon> Sélectionner une date</ion-button>
+<ion-button style="font-size: 20px;" shape="round" class="but-prix" color='success' (click)="calcul1()"><ion-icon name="calculator-outline"></ion-icon> Estimation du prix</ion-button>
+<ion-button style="font-size: 20px;" shape="round" class="but-cal" (click)='postData()' color='success'> <ion-icon name="card-outline" > </ion-icon> Sélectionner une date</ion-button>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

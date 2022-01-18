@@ -139,9 +139,11 @@ const routes: Routes = [
   {
     path: 'confirmation/:xyz',
     loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
+  },
+  {
+    path: 'recap2/:xyz',
+    loadChildren: () => import('./recap2/recap2.module').then( m => m.Recap2PageModule)
   }
-
-
 
 ];
 @NgModule({
