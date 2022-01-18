@@ -5,7 +5,25 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<div class="stepper-wrapper">
+	<div class="stepper-item completed">
+	  <div class="step-counter">1</div>
+	  <div class="step-name">Réservation</div>
+	</div>
+	<div class="stepper-item completed">
+	  <div class="step-counter">2</div>
+	  <div class="step-name">Choix du mode de paiement et récapitulatif</div>
+	</div>
+	<div class="stepper-item completed">
+	  <div class="step-counter">3</div>
+	  <div class="step-name">Paiement</div>
+	</div>
+	<div class="stepper-item completed">
+	  <div class="step-counter">4</div>
+	  <div class="step-name">Confirmation</div>
+	</div>
+  </div>
 
 <ion-content>
   <h1 style="font-size: 16px;"><ion-icon style="color: green;" name="alert-circle-outline"></ion-icon> Veuillez compléter vos informations ! </h1>
@@ -27,4 +45,21 @@
     <div class="mbsc-btn-group-block mbsc-padding">
         <ion-button class="ionic-super-popup" color="success" (click)="showAlert()">Je paie !</ion-button>
     </div>
+    <br>
 </ion-content>
+<div class="container">
+  <h1>Contactez-nous</h1>
+  <p class="p"><strong>N'hésitez pas à nous contacter si vous avez une question</strong></p>
+  <div class="content">
+    <div class="left-side">
+    <div class="phone details">
+      <i class="fas fa-phone-alt"></i>
+      <div class="topic">Appelez-nous</div>
+      <div class="text-one"><a href="tel:010323278">+32 (0)10 / 32.32.78</a></div>
+    </div>
+    <div class="email details">
+      <i class="fas fa-envelope"></i>
+      <div class="topic">Écrivez-nous</div>
+      <div class="text-one"><a href="mailto:info@greenium.be"> info@greenium.be</a></div>
+    </div>
+    </div>

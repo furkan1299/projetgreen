@@ -5,7 +5,24 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
+<div class="stepper-wrapper">
+	<div class="stepper-item completed">
+	  <div class="step-counter">1</div>
+	  <div class="step-name">Réservation</div>
+	</div>
+	<div class="stepper-item completed">
+	  <div class="step-counter">2</div>
+	  <div class="step-name">Choix du mode de paiement et récapitulatif</div>
+	</div>
+	<div class="stepper-item active">
+	  <div class="step-counter">3</div>
+	  <div class="step-name">Paiement</div>
+	</div>
+	<div class="stepper-item">
+	  <div class="step-counter">4</div>
+	  <div class="step-name">Confirmation</div>
+	</div>
+  </div>
 <ion-content>
   	<div class="background-pic">
 	<div class="filter">
@@ -41,14 +58,14 @@
 			<ion-row>
 				<ion-card class='ion-card-rec'>
 				<ion-item>
-					<ion-label class='label'>Recapitulatif</ion-label>		
+					<ion-label class='label'>Récapitulatif</ion-label>		
 				</ion-item>
 				<div class='recap'>
 					<ion-item>
 						<h3>Type de dechets : {{this.data[9]}}{{this.data[10]}}{{this.data[11]}}{{this.data[12]}}{{this.data[13]}}{{this.data[14]}}{{this.data[15]}}{{this.data[16]}}{{this.data[17]}}{{this.data[18]}}{{this.data[19]}}</h3>
 					</ion-item>
 					<ion-item>
-						<h3>Taille des dechets : {{this.data[32]}}{{this.data[33]}}{{this.data[34]}}{{this.data[35]}}{{this.data[36]}}{{this.data[37]}}{{this.data[38]}}</h3><br>
+						<h3>Taille des déchets : {{this.data[32]}}{{this.data[33]}}{{this.data[34]}}{{this.data[35]}}{{this.data[36]}}{{this.data[37]}}{{this.data[38]}}</h3><br>
 					</ion-item>
 					<ion-item>
 						<h3>Date de rendez-vous : {{this.data[50]}}{{this.data[51]}}{{this.data[52]}}{{this.data[53]}}{{this.data[54]}}{{this.data[55]}}{{this.data[56]}}{{this.data[57]}}{{this.data[58]}}{{this.data[59]}}</h3><br>
@@ -61,4 +78,3 @@
 			</ion-row>
 		</ion-col>
 	</ion-grid>
-
