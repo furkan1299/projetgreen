@@ -120,7 +120,7 @@ showCat(){
 async affiche(){
   const alert = await this.alertController.create({
     cssClass: 'alert-buttons',
-    header: 'Notre conteneur de 8 pieds standard est probablement le produit le plus modeste de notre gamme. ',
+    header: 'Notre conteneur de 8 pieds standard est probablement le produit le plus populaire de notre gamme. ',
     message: `<img src="../../assets/slider/bb.png">`,
     buttons: [
       {
